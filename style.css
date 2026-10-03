@@ -1,0 +1,569 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: #f3fbff;
+    color: #365568;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 8%;
+
+    background: #ffffff;
+
+    border-bottom: 2px solid #d9f0fa;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 100;
+}
+
+
+.logo {
+    font-size: 18px;
+
+    font-weight: 700;
+
+    color: #4b9fc2;
+}
+
+
+.nav-links {
+    display: flex;
+
+    gap: 30px;
+}
+
+
+.nav-links a {
+    text-decoration: none;
+
+    color: #527487;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+
+.nav-links a:hover {
+    color: #46a8d2;
+}
+
+
+/* =========================
+   HOME
+========================= */
+
+.hero {
+    min-height: 90vh;
+
+    padding: 70px 9%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 70px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #e5f7ff,
+            #f7fcff
+        );
+
+    overflow: hidden;
+}
+
+
+.hero-content {
+    max-width: 600px;
+}
+
+
+.mini-title {
+    color: #55a8cc;
+
+    font-size: 12px;
+
+    letter-spacing: 4px;
+
+    font-weight: 700;
+
+    margin-bottom: 18px;
+}
+
+
+h1 {
+    font-family: 'Playfair Display', serif;
+
+    font-size: clamp(55px, 8vw, 90px);
+
+    line-height: 0.95;
+
+    color: #31576a;
+}
+
+
+h1 span {
+    color: #54afd4;
+
+    font-style: italic;
+}
+
+
+.intro {
+    max-width: 520px;
+
+    margin: 30px 0;
+
+    line-height: 1.8;
+
+    color: #607d8b;
+
+    font-size: 16px;
+}
+
+
+.btn {
+    display: inline-block;
+
+    padding: 14px 28px;
+
+    background: #5bb3d8;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 10px;
+
+    font-weight: 600;
+
+    box-shadow: 0 8px 20px rgba(69, 160, 199, 0.25);
+
+    transition: 0.3s;
+}
+
+
+.btn:hover {
+    background: #429bc2;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   TEACHER PHOTO
+========================= */
+
+.teacher-box {
+    width: 370px;
+
+    position: relative;
+
+    text-align: center;
+}
+
+
+.circle-design {
+    position: absolute;
+
+    width: 310px;
+
+    height: 310px;
+
+    border-radius: 50%;
+
+    background: #c9edfc;
+
+    top: -25px;
+
+    right: -15px;
+
+    z-index: 0;
+}
+
+
+.teacher-photo {
+    position: relative;
+
+    z-index: 2;
+
+    width: 310px;
+
+    height: 380px;
+
+    margin: auto;
+
+    padding: 10px;
+
+    background: white;
+
+    border-radius: 150px 150px 25px 25px;
+
+    box-shadow: 0 20px 45px rgba(59, 116, 139, 0.18);
+}
+
+
+.teacher-photo img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 140px 140px 18px 18px;
+}
+
+
+.teacher-name {
+    position: relative;
+
+    z-index: 3;
+
+    width: 85%;
+
+    margin: -35px auto 0;
+
+    padding: 18px;
+
+    background: white;
+
+    border-radius: 12px;
+
+    box-shadow: 0 10px 25px rgba(59, 116, 139, 0.15);
+}
+
+
+.teacher-name p {
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    color: #69abc7;
+
+    margin-bottom: 5px;
+}
+
+
+.teacher-name h2 {
+    font-family: 'Playfair Display', serif;
+
+    font-size: 22px;
+
+    color: #31576a;
+}
+
+
+/* =========================
+   MESSAGE
+========================= */
+
+.message-section {
+    padding: 100px 9%;
+
+    background: white;
+}
+
+
+.message-title {
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+
+.message-title p {
+    color: #5daac9;
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    font-weight: 700;
+
+    margin-bottom: 12px;
+}
+
+
+.message-title h2 {
+    font-family: 'Playfair Display', serif;
+
+    font-size: 45px;
+
+    color: #31576a;
+}
+
+
+.message-container {
+    max-width: 850px;
+
+    margin: auto;
+
+    padding: 50px;
+
+    background: #eaf8fd;
+
+    border: 1px solid #cdebf6;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    position: relative;
+}
+
+
+.quote {
+    font-family: Georgia, serif;
+
+    font-size: 80px;
+
+    line-height: 40px;
+
+    color: #80c8e2;
+
+    margin-bottom: 15px;
+}
+
+
+.message-container p {
+    color: #55717f;
+
+    line-height: 1.9;
+
+    margin: 18px 0;
+}
+
+
+.message-container h3 {
+    margin-top: 30px;
+
+    font-family: 'Playfair Display', serif;
+
+    color: #429bc2;
+
+    font-size: 24px;
+}
+
+
+/* =========================
+   MUSIC
+========================= */
+
+.music-section {
+    padding: 100px 9%;
+
+    background: #dff4fc;
+
+    text-align: center;
+}
+
+
+.music-card {
+    max-width: 650px;
+
+    margin: auto;
+
+    padding: 55px 30px;
+
+    background: white;
+
+    border-radius: 25px;
+
+    box-shadow: 0 15px 40px rgba(59, 116, 139, 0.12);
+}
+
+
+.music-symbol {
+    width: 75px;
+
+    height: 75px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: #65b8d8;
+
+    color: white;
+
+    border-radius: 50%;
+
+    font-size: 34px;
+}
+
+
+.music-card h2 {
+    font-family: 'Playfair Display', serif;
+
+    color: #31576a;
+
+    font-size: 42px;
+
+    margin-bottom: 10px;
+}
+
+
+.music-card > p:not(.mini-title) {
+    color: #718995;
+
+    margin-bottom: 25px;
+}
+
+
+audio {
+    width: min(500px, 100%);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 45px 20px;
+
+    text-align: center;
+
+    background: #31576a;
+
+    color: white;
+}
+
+
+.footer-star {
+    color: #9cddf3;
+
+    font-size: 25px;
+
+    margin-bottom: 10px;
+}
+
+
+footer h2 {
+    font-family: 'Playfair Display', serif;
+
+    margin-bottom: 8px;
+}
+
+
+footer p {
+    font-size: 13px;
+
+    opacity: 0.85;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+    nav {
+        padding: 16px 5%;
+    }
+
+
+    .logo {
+        font-size: 15px;
+    }
+
+
+    .nav-links {
+        gap: 12px;
+    }
+
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding-top: 55px;
+    }
+
+
+    .intro {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .teacher-box {
+        width: 100%;
+
+        margin-top: 30px;
+    }
+
+
+    .teacher-photo {
+        width: 280px;
+
+        height: 350px;
+    }
+
+
+    .circle-design {
+        width: 270px;
+
+        height: 270px;
+
+        right: 50%;
+
+        transform: translateX(50%);
+    }
+
+
+    .message-container {
+        padding: 35px 22px;
+    }
+
+
+    .message-title h2 {
+        font-size: 35px;
+    }
+
+
+    .music-card h2 {
+        font-size: 35px;
+    }
+
+}
